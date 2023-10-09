@@ -2,12 +2,65 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Интернет-магазин
+      кофейных напитков</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="./fonts/Montserrat-Bold.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="preload" href="./fonts/Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="preload" href="./fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="preload" href="./fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="header" data-test="header">
+      Шапка
+      <div class="header__wrapper">
+        <a  class="header__logo" href="">
+          <img class="header__logo-image" src="./images/logo-mobile.svg" width="32" height="36" alt="">
+          <span class="header__logo-text">Интернет-магазин
+            кофейных напитков</span>
+        </a>
+        <nav class="header__nav main-nav">
+
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list page-list">
+              <li class="page-list__item">
+                <a href="">Главная</a>
+
+              </li>
+              <li class="page-list__item">
+                <a href="">Каталог</a>
+
+              </li>
+              <li class="page-list__item">
+                <a href="">Доставка</a>
+
+              </li>
+              <li class="page-list__item">
+                <a href="">О нас</a>
+
+              </li>
+            </ul>
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item">
+                <a class="user-list__link" href="" >
+                  Войти
+                </a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__link" href="" >
+                  Корзина
+                </a>
+              </li>
+            </ul>
+            <button class="main-nav__toogle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>          </div>
+
+        </nav>
+      </div>
+
+    </header>
 
     <script src="js/script.js" defer></script>
   </body>

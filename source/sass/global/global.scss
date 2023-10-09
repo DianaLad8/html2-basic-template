@@ -1,1 +1,16 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+
+  &[src*=".svg"] {
+    object-fit: cover;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
