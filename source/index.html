@@ -13,55 +13,51 @@
   </head>
   <body class="page__body">
     <header class="header" data-test="header">
-      Шапка
       <div class="header__wrapper">
-        <a  class="header__logo" href="">
-          <img class="header__logo-image" src="./images/logo-mobile.svg" width="32" height="36" alt="">
-          <span class="header__logo-text">Интернет-магазин
+        <a  class="header__logo link" href="">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./images/logo.svg#desctop-header" width="170" height="36">
+            <source media="(min-width: 768px)" srcset="./images/logo.svg#tablet-header" width="82" height="36">
+            <img class="header__logo-image" src="./images/logo.svg#mobile-header" width="32" height="36" alt="">
+          </picture>
+          <span class="header__logo-text">Интернет-магазин <br>
             кофейных напитков</span>
         </a>
         <nav class="header__nav main-nav">
-
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list page-list">
-              <li class="page-list__item">
-                <a href="">Главная</a>
-
-              </li>
-              <li class="page-list__item">
-                <a href="">Каталог</a>
-
-              </li>
-              <li class="page-list__item">
-                <a href="">Доставка</a>
-
-              </li>
-              <li class="page-list__item">
-                <a href="">О нас</a>
-
-              </li>
-            </ul>
-            <ul class="main-nav__list user-list">
-              <li class="user-list__item">
-                <a class="user-list__link" href="" >
-                  Войти
-                </a>
-              </li>
-              <li class="user-list__item">
-                <a class="user-list__link" href="" >
-                  Корзина
-                </a>
-              </li>
-            </ul>
-            <button class="main-nav__toogle" type="button">
+          <div class="main-nav__page">
+            <button class="main-nav__toogle js-toggle-button" type="button">
               <span class="visually-hidden">Открыть меню</span>
-            </button>          </div>
-
+            </button>
+            <ul class="main-nav__list list page-list">
+              <li class="page-list__item page-list__item--current">
+                <a class="page-list__link link link--text" href="">Главная</a>
+              </li>
+              <li class="page-list__item">
+                <a class="page-list__link link link--text" href="">Каталог</a>
+              </li>
+              <li class="page-list__item">
+                <a class="page-list__link link link--text" href="">Доставка</a>
+              </li>
+              <li class="page-list__item">
+                <a class="page-list__link link link--text" href="">О нас</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="main-nav__list list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--user link link--text" href="" >
+                <span class="user-list__desk">Войти</span>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--basket link link--text" href="" >
+                <span class="user-list__desk">Корзина</span>
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
-
     </header>
-
     <script src="js/script.js" defer></script>
   </body>
 </html>

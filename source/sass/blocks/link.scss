@@ -1,0 +1,22 @@
+.link {
+  display: block;
+  padding: 12px 0;
+  text-decoration: none;
+}
+
+.link--text {
+  padding: 21px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--base-black);
+
+  &:hover,
+  &:focus {
+    color: var(--base-primary);
+  }
+
+  &:active {
+    background-color: var(--base-secondary);
+    color: var(--base-primary);
+  }
+}

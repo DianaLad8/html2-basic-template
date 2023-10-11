@@ -1,0 +1,77 @@
+.user-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    gap: 5px;
+    justify-content: end;
+  }
+}
+
+.user-list__item:active {
+  background-color: var(--base-secondary);
+}
+
+.user-list__link {
+  position: relative;
+  display: inline-flex;
+  padding: 32px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  &--user::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: var(--base-black);
+    mask-image: url("../../images/icons/stack.svg#user");
+    mask-size: 16px 16px;
+    mask-repeat: no-repeat;
+  }
+
+  &--basket::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: var(--base-black);
+    mask-image: url("../../images/icons/stack.svg#basket");
+  }
+
+  &:active {
+    background-color: var(--base-secondary);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px;
+    padding-left: 64px;
+  }
+}
+
+.user-list__desk {
+  position: fixed;
+  transform: scale(0);
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding: 32px 20px;
+    display: inline-block;
+    transform: scale(1);
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list__link::before {
+    position: absolute;
+    left: 10px;
+  }
+
+  .user-list__link:hover::before,
+  .user-list__link:focus::before {
+    background-color: var(--base-primary);
+  }
+}
