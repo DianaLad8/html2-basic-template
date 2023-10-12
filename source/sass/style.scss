@@ -3,6 +3,7 @@
 @import "global/global";
 @import "global/fonts";
 @import "blocks/page.scss";
+@import "blocks/page__container.scss";
 @import "blocks/visually-hidden.scss";
 
 //общие стили для всех блоков
@@ -17,4 +18,16 @@
 @import "blocks/main-nav.scss";
 @import "blocks/page-list.scss";
 @import "blocks/user-list.scss";
+@import "blocks/media-list.scss";
+
+// Страница
+
+@import "blocks/main.scss";
+
+// Подвал
+@import "blocks/footer.scss";
+@import "blocks/logos.scss";
+@import "blocks/social.scss";
+@import "blocks/block.scss";
+@import "blocks/contact.scss";
 

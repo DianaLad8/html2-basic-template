@@ -2,6 +2,32 @@
   display: block;
   padding: 12px 0;
   text-decoration: none;
+
+  &--footer {
+    display: inline-flex;
+    padding: 9px 0;
+    align-items: flex-start;
+    text-decoration: none;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: var(--base-black);
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      padding: 8px 0;
+    }
+  }
+
+  &--footer:hover,
+  &--footer:focus {
+    color: var(--alt-primary-lighte);
+  }
+
+  &--footer:active {
+    color: var(--alt-primary-darker);
+  }
 }
 
 .link--text {

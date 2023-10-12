@@ -8,7 +8,7 @@
 
 
   @media (min-width: $desktop-width) {
-    width: 700px;
+    width: 900px;
   }
 }
 
@@ -56,4 +56,10 @@
 .main-nav__page--opened ul {
   display: flex;
   flex-direction: column;
+}
+
+.main-nav__list {
+  @media (min-width: $desktop-width) {
+    width: 330px;
+  }
 }

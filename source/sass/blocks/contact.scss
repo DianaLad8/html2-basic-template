@@ -1,0 +1,60 @@
+.contact {
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -7%;
+    height: 1px;
+    width: 115%;
+    background-color: var(--base-secondary);
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.contact__address {
+  position: relative;
+  margin: 0;
+  padding: 10px 0 16px 19px;
+  display: block;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 16px;
+    left: 0;
+    top: 8px;
+    background-image: url("../../images/icons/stack.svg#address");
+  }
+}
+
+.contact__phone {
+  position: relative;
+  margin: 0;
+  padding-left: 19px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 16px;
+    left: 0;
+    top: 4px;
+    background-image: url("../../images/icons/stack.svg#phone");
+  }
+}
