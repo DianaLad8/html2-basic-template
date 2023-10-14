@@ -10,6 +10,7 @@
 
 @import "blocks/list.scss";
 @import "blocks/link.scss";
+@import "blocks/button.scss";
 
 /* BLOCKS */
 // Шапка
@@ -23,6 +24,11 @@
 // Страница
 
 @import "blocks/main.scss";
+
+// Слайдер
+
+@import "blocks/hero.scss";
+@import "blocks/slider.scss";
 
 // Подвал
 @import "blocks/footer.scss";
