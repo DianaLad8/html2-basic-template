@@ -57,7 +57,7 @@
   }
 
   &:active {
-    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207,0) 100%);
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
   }
 
   &:disabled {
@@ -75,8 +75,7 @@
   z-index: 10;
 }
 
-.slider__toggle:disabled >
-.slider__arrow {
+.slider__toggle:disabled > .slider__arrow {
   mask-image: url("../../images/icons/stack.svg#arrow");
   background-color: var(--base-grey-dark);
 }

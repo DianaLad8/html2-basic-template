@@ -1,9 +1,22 @@
 .social__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  width: 160px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+    width: 500px;
+    justify-content: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 320px;
+    justify-content: start;
+  }
 }
 
 .social__item {
@@ -31,7 +44,7 @@
     content: "";
     width: 20px;
     height: 20px;
-    mask-image: url(../../images/icons/stack.svg#icon-vk);
+    mask-image: url("../../images/icons/stack.svg#icon-vk");
     background-color: var(--base-grey);
     mask-size: 20px 20px;
     mask-repeat: no-repeat;
@@ -44,11 +57,11 @@
     background-color: var(--base-primary);
   }
 
-  &--pinterst::before {
-    mask-image: url(../../images/icons/stack.svg#icon-pinterest);
+  &--pinterest::before {
+    mask-image: url("../../images/icons/stack.svg#icon-pinterest");
   }
 
   &--ok::before {
-    mask-image: url(../../images/icons/stack.svg#icon-ok);
+    mask-image: url("../../images/icons/stack.svg#icon-ok");
   }
 }

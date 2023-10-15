@@ -38,13 +38,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 317px;
+    width: 300px;
   }
 }
 
 .block__title {
   margin: 0;
-  padding-top: 20px;
+  padding-top: 22px;
   padding-bottom: 12px;
   font-size: 14px;
   font-weight: 700;
@@ -52,7 +52,7 @@
   color: var(--base-primary);
 
   @media (min-width: $tablet-width) {
-    padding-top: 12px;
+    padding-top: 8px;
     padding-bottom: 10px;
   }
 }

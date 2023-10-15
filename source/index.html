@@ -9,19 +9,19 @@
     <link rel="icon" href="./favicon.ico">
     <link rel="icon" href="./images/favicon.svg" type="images/svg+xml">
     <link rel="apple-touch-icon" href="./images/favicon-32x32.png">
-    <link rel="preload" href="./fonts/Montserrat-Bold.woff2" type="font/woff2" as="font" crossorigin>
-    <link rel="preload" href="./fonts/Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin>
-    <link rel="preload" href="./fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin>
-    <link rel="preload" href="./fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="preload" href="./fonts/Montserrat-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <div class="page__container">
       <header class="header" data-test="header">
         <div class="header__wrapper">
-          <a  class="header__logo link" href="">
+          <a  class="header__logo link" href="/">
             <picture>
-              <source media="(min-width: 1360px)" srcset="./images/logo.svg#desctop" width="170" height="36">
-              <source media="(min-width: 768px)" srcset="./images/logo.svg#tablet" width="82" height="36">
+              <source media="(min-width: 1360px)" srcset="./images/logo.svg#desctop" width="170" height="36" type="image/svg">
+              <source media="(min-width: 768px)" srcset="./images/logo.svg#tablet" width="82" height="36" type="image/svg">
               <img class="header__logo-image" src="./images/logo.svg#mobile" width="32" height="36" alt="Логотип">
             </picture>
             <span class="header__logo-text">Интернет-магазин <br>
@@ -34,27 +34,27 @@
               </button>
               <ul class="main-nav__list list page-list">
                 <li class="page-list__item page-list__item--current">
-                  <a class="page-list__link link link--text" href="">Главная</a>
+                  <a class="page-list__link link link--text" href="/">Главная</a>
                 </li>
                 <li class="page-list__item">
-                  <a class="page-list__link link link--text" href="">Каталог</a>
+                  <a class="page-list__link link link--text" href="/">Каталог</a>
                 </li>
                 <li class="page-list__item">
-                  <a class="page-list__link link link--text" href="">Доставка</a>
+                  <a class="page-list__link link link--text" href="/">Доставка</a>
                 </li>
                 <li class="page-list__item">
-                  <a class="page-list__link link link--text" href="">О нас</a>
+                  <a class="page-list__link link link--text" href="/">О нас</a>
                 </li>
               </ul>
             </div>
             <ul class="main-nav__list list user-list">
               <li class="user-list__item">
-                <a class="user-list__link user-list__link--user link link--text" href="" >
+                <a class="user-list__link user-list__link--user link link--text" href="/" >
                   <span class="user-list__desk">Войти</span>
                 </a>
               </li>
               <li class="user-list__item">
-                <a class="user-list__link user-list__link--basket link link--text" href="" >
+                <a class="user-list__link user-list__link--basket link link--text" href="/" >
                   <span class="user-list__desk">Корзина</span>
                 </a>
               </li>
@@ -65,14 +65,14 @@
       <main class="main">
         <h1 class="main__title visually-hidden">Интернет-магазин
           кофейных напитков</h1>
-        <section class="hero" data-test="hero">
+        <section class="hero " data-test="hero">
           <h2 class="hero__title visually-hidden">Новые поступления в наш магазин</h2>
           <div class="hero__wrapper slider">
             <ul class="hero__list list slider__list">
               <li class="hero__item hero__item--flat-white slider__item slider__item--current">
                 <picture>
-                  <source media="(min-width: 1360px)" srcset="images/slider/slide1-desctop@1x.png, images/slider/slide1-desctop@2x.png 2x" type="image/jpg" width="600" height="600">
-                  <source media="(min-width: 768px)" srcset="images/slider/slide1-tablet@1x.png, images/slider/slide1-tablet@2x.png 2x" type="image/jpg" width="476" height="476">
+                  <source media="(min-width: 1360px)" srcset="images/slider/slide1-desktop@1x.png, images/slider/slide1-desktop@2x.png 2x" type="image/png" width="600" height="600">
+                  <source media="(min-width: 768px)" srcset="images/slider/slide1-tablet@1x.png, images/slider/slide1-tablet@2x.png 2x" type="image/png" width="476" height="476">
                   <img class="hero__umage" src="./images/slider/slide1-mobile@1x.png" srcset="/images/slider/slide1-mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт">
                 </picture>
                 <div class="hero__content">
@@ -89,8 +89,8 @@
               </li>
               <li class="hero__item hero__item--lavender-latte slider__item">
                   <picture>
-                    <source media="(min-width: 1360px)" srcset="images/slider/slide2-desctop@1x.png, images/slider/slide2-desctop@2x.png 2x" type="image/jpg" width="600" height="600">
-                    <source media="(min-width: 768px)" srcset="images/slider/slide2-tablet@1x.png, images/slider/slide2-tablet@2x.png 2x" type="image/jpg" width="476" height="476">
+                    <source media="(min-width: 1360px)" srcset="images/slider/slide2-desktop@1x.png, images/slider/slide2-desktop@2x.png 2x" type="image/png" width="600" height="600">
+                    <source media="(min-width: 768px)" srcset="images/slider/slide2-tablet@1x.png, images/slider/slide2-tablet@2x.png 2x" type="image/png" width="476" height="476">
                     <img class="hero__umage" src="./images/slider/slide2-mobile@1x.png" srcset="/images/slider/slide2-mobile@2x.png 2x" width="280" height="280" alt="Лавандовый Латте">
                   </picture>
                   <div class="hero__content">
@@ -106,8 +106,8 @@
               </li>
               <li class="hero__item hero__item--espresso slider__item">
                   <picture>
-                    <source media="(min-width: 1360px)" srcset="images/slider/slide3-desctop@1x.png, images/slider/slide3-desctop@2x.png 2x" type="image/jpg" width="600" height="600">
-                    <source media="(min-width: 768px)" srcset="images/slider/slide3-tablet@1x.png, images/slider/slide3-tablet@2x.png 2x" type="image/jpg" width="476" height="476">
+                    <source media="(min-width: 1360px)" srcset="images/slider/slide3-desktop@1x.png, images/slider/slide3-desktop@2x.png 2x" type="image/png" width="600" height="600">
+                    <source media="(min-width: 768px)" srcset="images/slider/slide3-tablet@1x.png, images/slider/slide3-tablet@2x.png 2x" type="image/png" width="476" height="476">
                     <img class="hero__umage" src="./images/slider/slide3-mobile@1x.png" srcset="/images/slider/slide3-mobile@2x.png 2x" width="280" height="280" alt="Тройной Эспрессо">
                   </picture>
                   <div class="hero__content">
@@ -163,14 +163,24 @@
             </ul>
           </div>
         </section>
+        <section class="map" data-test="map">
+          <h2 class="map__title visually-hidden">Интернет-магазин кофейных напитков на карте</h2>
+          <div class="map__map">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/map-desktop@1x.png, images/map-desktop@2x.png 2x" type="image/png" width="1440" height="540">
+              <source media="(min-width: 768px)" srcset="images/map-tablet@1x.png, images/map-tablet@2x.png 2x" type="image/png" width="768" height="480">
+              <img class="map__umage" src="./images/map-mobile@1x.png" srcset="/images/map-mobile@2x.png" width="320" height="420" alt="Интернет-магазин кофейных напитков на карте.">
+            </picture>
+          </div>
+        </section>
       </main>
       <footer class="footer" data-test="footer">
         <div class="footer__wrapper">
           <div class="footer__logos logos">
-            <a  class="logos__logo link" href="">
+            <a  class="logos__logo link" href="/">
               <picture>
-                <source media="(min-width: 1360px)" srcset="./images/logo.svg#desctop" width="170" height="36">
-                <source media="(min-width: 768px)" srcset="./images/logo.svg#desctop" width="170" height="36">
+                <source media="(min-width: 1360px)" srcset="./images/logo.svg#desctop" width="170" height="36" type="image/svg">
+                <source media="(min-width: 768px)" srcset="./images/logo.svg#desctop" width="170" height="36" type="image/svg">
                 <img class="logos__logo-image" src="./images/logo.svg#tablet" width="82" height="36" alt="Логотип">
               </picture>
               <span class="logos__logo-text">Интернет-магазин
@@ -179,31 +189,32 @@
           <div class="logos__social social">
             <ul class="social__list list">
               <li class="social__item">
-                <a class="social__link social__link--vk" href=""></a>
+                <a class="social__link social__link--vk" href="/" aria-label="ВКонтакте"></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--pinterst" href=""></a>
+                <a class="social__link social__link--pinterest" href="/" aria-label="Пинтерест"></a>
               </li>
               <li class="social__item">
-                <a class="social__link link social__link--ok" href=""></a>
+                <a class="social__link link social__link--ok" href="/" aria-label="Одноклассники"></a>
               </li>
             </ul>
-          </div>          </div>
+          </div>
+        </div>
           <div class="footer__block-group block">
             <nav class="block__nav-page">
               <h4 class="block__title">Интернет-магазин</h4>
                 <ul class="block__list list page-list page-list--footer">
                   <li class="page-list__item page-list__item--footer">
-                    <a class="page-list__link link link--footer" href="">Каталог</a>
+                    <a class="page-list__link link link--footer" href="/">Каталог</a>
                   </li>
                   <li class="page-list__item page-list__item--footer">
-                    <a class="page-list__link link link--footer" href="">Доставка</a>
+                    <a class="page-list__link link link--footer" href="/">Доставка</a>
                   </li>
                   <li class="page-list__item page-list__item--footer">
-                    <a class="page-list__link link link--footer" href="">Способы оплаты</a>
+                    <a class="page-list__link link link--footer" href="/">Способы оплаты</a>
                   </li>
                   <li class="page-list__item page-list__item--footer">
-                    <a class="page-list__link link link--footer" href="">О нас</a>
+                    <a class="page-list__link link link--footer" href="/">О нас</a>
                   </li>
                 </ul>
             </nav>
@@ -211,13 +222,13 @@
               <h4 class="block__title">Медиа</h4>
               <ul class="block__list list media-list">
                 <li class="media-list__item">
-                  <a href="" class="media-list__link link link--footer">Блог</a>
+                  <a class="media-list__link link link--footer" href="/">Блог</a>
                 </li>
                 <li class="media-list__item">
-                  <a href="" class="media-list__link link link--footer">Информация для СМИ</a>
+                  <a class="media-list__link link link--footer" href="/">Информация для СМИ</a>
                 </li>
                 <li class="media-list__item">
-                  <a href="" class="media-list__link link link--footer">Правовая информация</a>
+                  <a class="media-list__link link link--footer" href="/">Правовая информация</a>
                 </li>
               </ul>
             </nav>
@@ -227,12 +238,15 @@
               <p class="contact__phone">+7 (999) 999-99-99</p>
             </div>
           </div>
-          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
-            <span>Разработано в HTML Academy</span>
-            </a>
+          <div class="footer__copyright-wrapper">
+            <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="footer__copyright-text">Разработано в HTML Academy</span>
+              </a>
+          </div>
+
           </div>
         </footer>
         </div>
-    <script src="js/script.js" type="module" defer></script>
+    <script src="js/script.js" defer></script>
   </body>
 </html>
