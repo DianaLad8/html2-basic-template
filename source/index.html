@@ -123,7 +123,7 @@
               </li>
             </ul>
             <p class="hero__toggles slider__toggles">
-              <button class="slider__toggle slider__toggle--prev slider-button-prev" type="button" aria-label="Назад" disabled>
+              <button class="slider__toggle slider__toggle--prev slider-button-prev" type="button" aria-label="Назад" disabled="disabled">
                 <span class="slider__arrow slider__arrow--prev"></span>
               </button>
               <button class="slider__toggle slider__toggle--next slider-button-next" type="button" aria-label="Вперед">
@@ -135,6 +135,32 @@
               <button class="slider__step" type="button" aria-label="Слайд 2"></button>
               <button class="slider__step" type="button" aria-label="Слайд 2"></button>
             </p>
+          </div>
+        </section>
+        <section class="features" data-test="features">
+          <div class="features__wrapper">
+            <span class="features__badge">Преимущества</span>
+            <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
+            <ul class="features__list list">
+              <li class="features__item features__item--speed">
+                <h3 class="features__subtitle">Скорость</h3>
+                <p class="features__description">Готовый напиток всегда под рукой — просто открой банку</p>
+              </li>
+              <li class="features__item features__item--comfort">
+                <h3 class="features__subtitle">Удобство</h3>
+                <p class="features__description">Легко помещается и в карман,
+                  и в маленькую сумочку</p>
+              </li>
+              <li class="features__item features__item--energy">
+                <h3 class="features__subtitle">Бодрость</h3>
+                <p class="features__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+              </li>
+              <li class="features__item features__item--eco">
+                <h3 class="features__subtitle">Экологичность</h3>
+                <p class="features__description">Вся упаковка сделана
+                  из перерабатываемых материалов</p>
+              </li>
+            </ul>
           </div>
         </section>
       </main>
@@ -207,6 +233,6 @@
           </div>
         </footer>
         </div>
-    <script src="js/script.js" defer></script>
+    <script src="js/script.js" type="module" defer></script>
   </body>
 </html>

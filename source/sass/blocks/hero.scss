@@ -83,6 +83,28 @@
   }
 }
 
+.hero__image img {
+  width: 280px;
+  height: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 476px;
+    height: 476px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+.hero__content {
+  @media (min-width: $desktop-width) {
+    width: 625px;
+    padding-top: 50px;
+  }
+}
+
 .hero__badge {
   margin-bottom: 4px;
   display: block;
@@ -133,6 +155,7 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
     font-size: 20px;
     line-height: 32px;
   }
